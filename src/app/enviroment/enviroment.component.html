@@ -1,5 +1,9 @@
 <div class="enviroment-container"
 >
+    <app-hero-search *ngIf="this.component === 'HeroSearchComponent'"
+    ></app-hero-search>
+    <app-dashboard *ngIf="this.component === 'DashboardComponent'"
+    ></app-dashboard>
 </div>
 
 <button type="button" (click)="onClickMe()">Click me!</button>
